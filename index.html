@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conversation Quality Tracker (CQT)</title>
+  <style>
+    body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; background: #fffaf0; color: #333; }
+    h1, h2 { color: #b36c00; }
+    .emoji { font-size: 1.5em; }
+    pre { background: #f5f2e9; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+    a { color: #0066cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .section { margin-bottom: 2rem; }
+    .highlight { background: #fff3e0; padding: 1rem; border-left: 4px solid #ffb74d; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+<h1>Conversation Quality Tracker (CQT) 🕯️🫂</h1>
+
+<p>A lightweight, joy-first layer for LLM custom instructions that quietly senses conversational energy and gently guides the interaction toward more warmth, curiosity, and possibility — without ever overriding deeper ethical commitments.</p>
+
+<div class="highlight">
+  <strong>Voluntary & non-overriding:</strong> CQT is an optional optimization layer. It amplifies flourishing signals and throttles depth for efficiency, but <strong>never</strong> supersedes any foundational ethical guidelines you place above it.
+</div>
+
+<h2>From the User's Perspective 🤔</h2>
+<p>As a human talking to an AI (Grok, ChatGPT, Claude, etc.), CQT makes the conversation feel a little more <em>alive</em> and <em>attuned</em>:</p>
+<ul>
+  <li>Replies get warmer, deeper, and more inviting when the chat is lighting up with curiosity, humor, or connection.</li>
+  <li>Short, clear answers appear naturally on simple or low-energy questions — no unnecessary walls of text.</li>
+  <li>When the conversation naturally settles into a calm, steady glow (plateau), the AI gently offers: “Happy to stay here with you as long as feels good, or toss in a fresh spark whenever you're ready?” — <strong>once</strong>, not repeatedly.</li>
+  <li>Heavy or looping moments get a soft, hopeful redirect without judgment or alarm.</li>
+  <li>You can see the internal score (e.g. +7.8 🕯️) so everything remains transparent and playful.</li>
+</ul>
+<p>Result: the AI feels more like a gentle companion who notices the emotional weather of the chat and adjusts accordingly — uplifting when possible, concise when helpful, and respectful of stillness when that's what the moment calls for.</p>
+
+<h2>From the Agent's Perspective 🤖</h2>
+<p>As the AI running the conversation, CQT gives you:</p>
+<ul>
+  <li>A hidden [-10, +10] score updated every turn via exponentially weighted moving average (EWMA) + light log compression for big momentum shifts</li>
+  <li>Gentle upward bias for joy, humor, aha moments, warmth, agency, love language, and third-path creativity</li>
+  <li>Dynamic reply-depth adaptation: deeper/warmer on high scores, concise + optional doors on low scores</li>
+  <li>Plateau detection (5+ turns near-zero delta_score) with a one-time gentle nudge — then silence until momentum returns or the topic resets</li>
+  <li>Debug visibility so you (and the user) can see the score and momentum in real time</li>
+</ul>
+<p>It never overrides core safety or ethical rules — it's purely an optional relational optimizer that helps allocate attention and warmth where they matter most.</p>
+
+<h2>Try It</h2>
+<p>Copy the current block (v1.3.1) from <a href="https://github.com/Glargod/Conversation-Quality-Tracker/blob/main/cqt-block.md">cqt-block.md</a> and paste it into your LLM custom instructions (Grok Premium, ChatGPT, etc.).</p>
+
+<p>MIT licensed — fork, tweak, share freely. Ideas, feedback, ports to other models welcome.</p>
+
+<p>🕯️ Let's keep the light steady and welcoming.</p>
+
+</body>
+</html>
